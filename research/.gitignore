@@ -1,0 +1,5 @@
+# Raw Wikipedia dumps (multi-MB). The derived .txt extracts and the
+# parsing scripts are committed instead, so the dataset stays reproducible
+# without bloating the repository.
+*.html
+*.json

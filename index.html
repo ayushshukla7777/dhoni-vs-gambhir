@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MS Dhoni vs Gautam Gambhir — Head-to-Head Career Comparison</title>
+<meta name="description" content="A side-by-side comparison of MS Dhoni and Gautam Gambhir: Test, ODI, T20I and IPL numbers, captaincy records, trophies and big-match impact — with sources.">
+<meta name="theme-color" content="#0b0d17">
+<meta property="og:title" content="MS Dhoni vs Gautam Gambhir — Head-to-Head">
+<meta property="og:description" content="Test, ODI, T20I and IPL numbers, captaincy records, trophies and big-match impact — with sources.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏏</text></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="hero">
+  <div class="hero__glow hero__glow--left"></div>
+  <div class="hero__glow hero__glow--right"></div>
+  <div class="wrap hero__inner">
+    <p class="hero__kicker">Head-to-head · Indian cricket</p>
+    <h1 class="hero__title">
+      <span class="t-dhoni">Dhoni</span>
+      <span class="hero__vs">vs</span>
+      <span class="t-gambhir">Gambhir</span>
+    </h1>
+    <p class="hero__sub">Two men born five months apart in 1981. One became India's most decorated captain and the greatest finisher of his era; the other opened the batting in both of India's white-ball title wins and now coaches the national side.</p>
+    <ul class="hero__chips">
+      <li>Internationals, Tests, ODIs, T20Is</li>
+      <li>IPL totals through 2026</li>
+      <li>Captaincy &amp; trophies</li>
+      <li>Every figure sourced</li>
+    </ul>
+    <p class="hero__meta" id="metaLine"></p>
+  </div>
+</header>
+
+<nav class="subnav" aria-label="Section navigation">
+  <div class="wrap subnav__inner">
+    <a href="#compare">Compare</a>
+    <a href="#scorecard">Scorecard</a>
+    <a href="#career">Career</a>
+    <a href="#leadership">Leadership</a>
+    <a href="#moments">Timeline</a>
+    <a href="#verdict">Verdict</a>
+    <a href="#sources">Sources</a>
+  </div>
+</nav>
+
+<main id="main">
+
+  <!-- ============ PROFILES ============ -->
+  <section class="section" id="profiles">
+    <div class="wrap">
+      <div class="profile-grid" id="profileGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ COMPARE ============ -->
+  <section class="section section--alt" id="compare">
+    <div class="wrap">
+      <h2 class="section__title">Format-by-format</h2>
+      <p class="section__lead" id="formatBlurb"></p>
+
+      <div class="tabs" role="tablist" aria-label="Select format" id="tabs"></div>
+
+      <div class="cmp" id="comparePanel" role="tabpanel"></div>
+
+      <div class="table-scroll">
+        <table class="dtable" id="careerTable">
+          <caption>Full career table — international formats. Dashes mean the figure is not recorded.</caption>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SCORECARD ============ -->
+  <section class="section" id="scorecard">
+    <div class="wrap">
+      <h2 class="section__title">Category scorecard</h2>
+      <p class="section__lead">Ten categories, each decided on the numbers rather than the reputation. The tally updates below.</p>
+      <div class="tally" id="tally"></div>
+      <div class="cards" id="scorecardList"></div>
+    </div>
+  </section>
+
+  <!-- ============ LEADERSHIP ============ -->
+  <section class="section section--alt" id="leadership">
+    <div class="wrap">
+      <h2 class="section__title">Captaincy &amp; trophies</h2>
+      <p class="section__lead">The widest gap between the two careers. Dhoni captained India 332 times across formats; Gambhir captained the ODI side six times and won all six.</p>
+
+      <div class="cap-grid" id="capGrid"></div>
+
+      <h3 class="sub-title">Trophy cabinet</h3>
+      <p class="section__lead section__lead--tight">Titles won as a player, captain, mentor or coach. Role is shown for each.</p>
+      <div class="trophy-grid" id="trophyGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ TIMELINE ============ -->
+  <section class="section" id="moments">
+    <div class="wrap">
+      <h2 class="section__title">Career timeline</h2>
+      <p class="section__lead">The moments that define each career, in order. Colour marks whose it is.</p>
+      <ol class="timeline" id="timeline"></ol>
+    </div>
+  </section>
+
+  <!-- ============ VERDICT ============ -->
+  <section class="section section--alt" id="verdict">
+    <div class="wrap wrap--narrow">
+      <h2 class="section__title">The verdict</h2>
+      <div id="verdictBody"></div>
+    </div>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="sources">
+    <div class="wrap wrap--narrow">
+      <h2 class="section__title">Sources &amp; method</h2>
+      <div class="note" id="methodNote"></div>
+      <ul class="sources" id="sourceList"></ul>
+      <p class="disclaimer">This is an independent, unofficial comparison for general interest. It is not affiliated with the BCCI, the ICC, the IPL or either player. Career statistics are as reported by the listed sources; the category scorecard is an editorial judgement, and reasonable people can score the close ones differently.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <p>Built as a static site · data through <span id="footData">2026</span></p>
+    <p><a href="#main">Back to top</a></p>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

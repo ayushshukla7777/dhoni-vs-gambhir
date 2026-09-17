@@ -1,0 +1,22 @@
+# Render Blueprint — static site, no build step required.
+services:
+  - type: web
+    name: dhoni-vs-gambhir
+    runtime: static
+    repo: https://github.com/ayushshukla7777/dhoni-vs-gambhir
+    branch: main
+    buildCommand: ""
+    staticPublishPath: .
+    autoDeploy: true
+    # Long-lived caching for hashed-free assets is avoided here so content
+    # updates are visible immediately after a deploy.
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: SAMEORIGIN
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
